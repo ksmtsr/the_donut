@@ -13,3 +13,39 @@
  *= require_tree .
  *= require_self
  */
+body {
+  background-image: url('donut1.jpg');
+  /*一枚の画像を画面全体に表示*/
+  background-size: cover;
+  /*--背景画像を繰り返さない--*/
+  background-repeat: no-repeat;
+  /*--背景画像の固定--*/
+  background-attachment: fixed;
+}
+
+.header-nav {
+  width: 100%;
+}
+
+.nav-item {
+  text-align: center;
+  padding-right: 80px;
+}
+
+ul li {
+  /*要素は横並びにしたいけど、横幅・高さや余白を調整したい時*/
+  display: inline-block;
+  list-style-type: none;
+  padding-left: 20px;
+
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+  padding: 8px 30px;
+  border-bottom: 4px double #9966FF;
+  font-family: Arial Black;
+}
+
