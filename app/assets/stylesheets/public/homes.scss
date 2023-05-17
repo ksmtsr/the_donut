@@ -1,3 +1,13 @@
 // Place all the styles related to the public/homes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.wrapper {
+  /*一枚の画像を画面全体に表示*/
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background-image: url('donut1.jpg');
+}
+
+

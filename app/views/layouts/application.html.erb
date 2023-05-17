@@ -7,21 +7,10 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-    <div class="wrapper">
-      <div class="header">
-        <nav class="header-nav">
-          <ul class="nav-item">
-            <li><a href="">Item</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Sign up</a></li>
-            <li><a href="">Log in</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
     <%= yield %>
   </body>
 </html>
