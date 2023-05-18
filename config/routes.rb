@@ -13,7 +13,7 @@ Rails.application.routes.draw do
 
 
   devise_for :customers, controllers: {
-    registrations: "public/registrations",
+    registrations: 'public/registrations',
     sessions: 'public/sessions'
   }
 
@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   scope module: :public do
   root 'homes#top'
   get 'about' => 'homes#about'
+  get 'customers/mypage' => 'customers#show', as: 'mypage'
 end
 
 end

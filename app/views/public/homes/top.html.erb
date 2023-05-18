@@ -1,23 +1,23 @@
-<div class="wrapper">
+<div class="top-wrapper">
   <div class="header">
     <nav class="header-nav">
       <ul class="nav-item">
         <% if admin_signed_in? %>
           <li><a href="">Item</a></li>
           <li><%= link_to "About", about_path %></li>
-          <li><%= link_to "Sign up", new_customer_registration_path %></a></li>
-          <li><a href="">Log in</a></li>
-          <li><%= link_to "Log out", destroy_admin_session_path, method: :delete %></li>
+          <li><%= link_to "Sign up", new_customer_registration_path %></li>
+          <li><%= link_to "Sign out", destroy_admin_session_path, method: :delete %></li>
         <% elsif customer_signed_in? %>
+        <!--ようこそ、<%#= current_customer.last_name %>さん！-->
           <li><a href="">Item</a></li>
           <li><%= link_to "About", about_path %></li>
-          <li><a href="">Sign up</a></li>
-          <li><a href="">Log in</a></li>
+          <li><%= link_to "Cart item" %></li>
+          <li><%= link_to "Sign out", destroy_admin_session_path, method: :delete %></li>
         <% else %>
           <li><a href="">Item</a></li>
           <li><%= link_to "About", about_path %></li>
-          <li><a href="">Sign up</a></li>
-          <li><a href="">Log in</a></li>
+          <li><%= link_to "Sign up", new_customer_registration_path %></li>
+          <li><%= link_to "Sign in", new_customer_session_path %></li>
         <% end %>
       </ul>
     </nav>
